@@ -29,7 +29,7 @@ spreadsheet i.e. resolve cell dependencies and calculate values of expressions.
         Map of Cells that are referenced by other Cells. This is used to detect other potential cells that can be resolved
     
 * Expression Resolution Engine:<br />
-    Using Javascript script engine to evaluate expressions to get values
+    Using Javascript script engine to evaluate expressions to get cell values
 
 * Processing Queue:<br />
     This queue is used to keep track of cells that can potentially be resolved to values
@@ -55,6 +55,9 @@ Encapsulates cell level data & operations like:
     * At the end of loop:
         * Unresolved Map should be empty, if not then return exception
         * If Unresolved Map is empty -- then processing is complete
+
+### Entry Point
+    Class Name: Main.java
 
 ## Testing
 
