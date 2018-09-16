@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.rohancs.tools'
+version ''
+archivesBaseName = 'spreadsheet'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar.dependsOn test
